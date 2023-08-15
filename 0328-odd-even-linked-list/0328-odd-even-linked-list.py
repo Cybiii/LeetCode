@@ -16,15 +16,12 @@ class Solution:
             evens += [even.val]
 
             odd = odd.next.next
-            
             if not even.next:
                 break
-
             even = even.next.next
         
         if odd:
             odds += [odd.val]
-        
 
         lst = odds + evens
 
